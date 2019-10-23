@@ -1,0 +1,208 @@
+
+
+Softwares:
+==========
+
+Editors:Geany,Notepad++,Sublime,EDitplus,Atom etc.,
+
+compilers:Tdm gcc,cc, etc.,
+
+IDE:(editor+compiler):
+Turboc++,devc++,cFree,codeblocks
+
+Online Compilers:
+javatpoint,tutorialspoint,w3schools etc.,
+
+
+Compilation Process:
+++++++++++++++++++++
+
+.c   -> Humanreadable format(0,1 Assembler,assembly language)
+.o   -> Binary format(0,1 -> Humanreadable format, linker) 
+.exe -> cmd(output dislpay) 
+.out -> Linux (terminal)
+
+Flow of execution:
+++++++++++++++++++
+(Notepad + compiler)
+
+-> gcc sample.c
+-> a.exe(by default)
+-> a.exe or a (output)
+-> gcc san.c
+-> a.exe
+-> a or a.exe
+
+-> gcc sample.c -o se
+-> se.exe or se
+-> gcc sa.c -o sr
+-> sr.exe or sr
+-> se.exe
+
+compile -> f8 - .o
+build -> f9 - .exe
+execute -> f5 - cmd prmpt
+
+
+
+Structure of C:
+----------------
+
+- Comment Section
+- Header Section
+- Constant values //optional
+- Global variable declaration //optional
+- Function Prototype //optional
+- main function
+	- body of main
+		* variable declarations,expression,statements(conditional,control,jumping,function call)
+	- return return_value
+- Function declarations
+
+
+-> Comment S ection:
+	compiler execute -> skip
+	1. single line -> //
+	2. multi line -> /*
+						//code
+					 */
+
+-> Header Section:
+	-	predefined header files(task is fixed)
+		->stdio.h(printf,scanf,main)
+		->conio.h(clrscr,getch)	->math.h(pow,sqrt,trignometric(sin,cos,))	->string.h(strlen,strcpy,strrev,strcat)
+	- user-defined header file(user is to assign a task)
+		.h -> .c -> same location
+		#include<stdio.h> -> p
+		#include "sa.h" -> u
+
+-> Constant variables
+	#define PI 3.14
+	
+-> Global variables
+	int a=30;
+	
+-> main()
+	Body of main:
+	
+	primitive data types:
+		int -> short,long(only numeric) -> 4 -> %d
+		char -> ",' ('9','a','$')
+		float -> decimal values(0.23,0000.2356) -> .6 decimal points  (precesion values) -> 4 -> %f
+		double -> decimal values
+		(.15 decimal points) -> 8 -> %lf
+	
+	
+	Variables: 
+	- To stores the value
+	- It changes the value
+	
+	Types of variable:
+	- local  -> within a block 
+	- global -> within a program
+	- static -> value can be changed 
+	- extern -> access the value from another file
+	
+	
+	Operators:
+	
+	- A.O -> +,-,*,%,/
+	- R.O -> >=,<=,==,!= 
+	- L.O -> &&,||,! -> T (or) F
+	- B.O -> &,|,>>,<< -> values are printed 
+	- As.O -> +=,-=,*=,/=,%=
+	- Misc .O -> sizeof(),&,* (c)?t:f(ternary operator)
+
+a=10 b=20
+((a==20)&&(a<=b))
+	F   &&    T
+		F
+a=2 b=3
+
+	8 4 2 1
+a = 0 0 1 0
+b = 0 0 1 1
+=============
+a&b=0 0 1 0
+a&b=2
+
+
+
+Conditional statements: 
+-----------------------
+	- For checking either T or F 
+
+- if     -> 1 case
+- if-else -> 2 cases
+- nested if -> 2 or more cases
+- else-if ladder -> 2 or more cases
+- switch  -> 2 or more cases
+
+if: syntax:
+	
+		if(condition)
+		{
+			//stmnts
+		}
+
+if-else: syntax:
+	
+		if(condition)
+		{
+			//stmnts
+		}
+		else
+		{
+			//stmnts
+		}
+		
+nested if: syntax:
+	
+		if(condition1)
+		{
+			//stmnts
+			if(condition2)
+			{
+				//stmnt
+			}
+			else
+			{
+				//stmnt
+			}
+		}
+		else
+		{
+			//stmnts
+		}
+		
+		
+else-if: syntax:
+
+		if(condition1)
+		{
+			//stmnt1
+		}
+		else if(condition2)
+		{
+			//stmnt2
+		}
+		else if(condition3)
+		{
+			//stmnt3
+		}
+		else
+		{
+			//stmnt
+		}
+		
+switch: syntax:
+
+	switch(op)
+	{
+		case 1: //stmnt;break;
+		case
+		
+		
+		case n://stmnt;break;
+		default://stmnt;
+	}
